@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -19,18 +18,29 @@
       }
       header {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column; /* susun ke bawah */
         background: #ffffff;
-        padding: 15px 20px;
+        padding: 20px;
         border-radius: 8px;
         margin-top: 20px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+      }
+      header section {
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0px 0px;
       }
       header h1 {
         margin: 0;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         color: #333;
+      }
+      header h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #0055a5;
       }
       header img {
         border-radius: 8px;
@@ -40,7 +50,7 @@
         margin-top: 20px;
         padding: 15px 20px;
         border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
       }
       section h2 {
         margin-top: 0;
@@ -73,12 +83,10 @@
   <body>
     <main>
       <header>
-        <h1>Muhammad Naufal Aulia</h1>
-        <img src="JAS FORMAL.jpg" alt="Foto Naufal" width="150" />
-      </header>
-
-      <!-- Biography -->
-      <section>
+        <section>
+          <h1>Muhammad Naufal Aulia</h1>
+          <img src="JAS FORMAL.jpg" alt="Foto Naufal" width="150" />
+        </section>
         <h2>Short Biography</h2>
         <p>
           Mahasiswa Ilmu Komputer Universitas Negeri Jakarta. Memiliki
@@ -88,7 +96,7 @@
           bidang teknologi dan sangat antusias dalam mempelajari bidang
           tersebut.
         </p>
-      </section>
+      </header>
 
       <!-- Awards -->
       <section>
